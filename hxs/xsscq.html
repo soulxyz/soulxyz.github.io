@@ -1,0 +1,199 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>同人小说生成器</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link href="style.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<br>
+<center>
+<img src="icon.png" width=40px height=40px/><br>
+<b><font size="5">
+同人小说生成器<br>（沙雕版）
+</font></b></center>
+<br>
+
+<style type="text/css">
+input,textarea {
+	border:2px solid #ddd;
+	border-radius:0;
+	color:#999;
+	display:block;
+	font:400 1em/1 "Open Sans",sans-serif;
+	margin:0 0 .5em;
+	padding:1em 1.25em;
+	width:100%;
+	-webkit-transition:border-color 300ms,color 300ms;
+	transition:border-color 300ms,color 300ms;
+	-webkit-appearance:none
+}
+input:focus,textarea:focus {
+	border-color:#333;
+	color:#333;
+	outline:0
+}
+textarea {
+	margin:0;
+	min-height:7.5em;
+	line-height:1.5;
+	overflow:auto;
+	resize:vertical
+}
+.arrow {
+	border-top:9px solid #ddd;
+	border-right:9px solid #ddd;
+	border-bottom:9px inset transparent;
+	border-left:9px inset transparent;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	-webkit-transition:border-color 300ms;
+	transition:border-color 300ms
+}
+input:focus+.arrow,textarea:focus+.arrow {
+	border-top-color:#333;
+	border-right-color:#333
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	padding: 10 60px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px/25px Arial, sans-serif;
+}
+
+.green {
+	color: #3e5706;
+	background: #a5cd4e;
+}
+
+.blue {
+	color: #19667d;
+	background: #70c9e3;
+}
+
+.gray {
+	color: #515151;
+	background: #d3d3d3;
+}
+
+
+.dibu{
+position:fixed;
+bottom:0;
+}
+
+</style>
+
+<div class="container">
+<link href="http://wb.newbfun.com/css/style.min.css" rel="stylesheet" />
+
+		<label class="fade">
+			<input id="shuru1" name="field1" placeholder="♂ 请输入男主名字" />
+			<div class="arrow"></div>
+		</label>
+		<br>
+		<label class="fade">
+			<input id="shuru2" name="field1" placeholder="♀ 请输入女主名字" />
+			<div class="arrow"></div>
+		</label>
+
+</div>
+
+<center>
+<a onclick="tiaozhuan()" class="button green">点击生成</a>
+</center>
+
+<br><br><br>
+<font size = "2" color = "#FF0000">更新公告：<br>鉴于沙雕网友喜欢玩，于是又新增了三个沙雕文。</font>
+
+<div class = "dibu">
+<font size = "1.5" color = "#9ACD32">制作人：新浪微博最帅博主 @机智的何先生</font>
+<br>
+<font size = "1" color = "#A9A9A9">注：注意只需输入你想输入的名字即可，切勿输入密码等需保密的内容。</font>
+</div>
+
+<script type="text/javascript" src="placeholdem.min.js"></script>
+<script type="text/javascript">
+
+<!--占位符演示代码-->
+Placeholdem(document.querySelectorAll('[placeholder]'));
+
+
+<!--页面打开淡出淡进/可无视-->
+var fadeElems = document.body.querySelectorAll('.fade'),
+fadeElemsLength = fadeElems.length,
+i = 0,
+interval = 50;
+function incFade(){
+	if(i < fadeElemsLength){
+		fadeElems[ i ].className += ' fade-load';
+		i++;
+		setTimeout(incFade, interval);
+	}
+}
+setTimeout( incFade, interval );
+
+(function(){
+       window.alert = function(name){
+var iframe = document.createElement("IFRAME");
+iframe.style.display="none";
+iframe.setAttribute("src", 'data:text/plain');
+document.documentElement.appendChild(iframe);
+window.frames[0].window.alert(name);
+iframe.parentNode.removeChild(iframe);
+}
+})();
+
+function tiaozhuan(){
+
+var shuru_1=document.getElementById("shuru1").value;
+var shuru_2=document.getElementById("shuru2").value;
+
+if(shuru_1 == null || shuru_1 == "♂ 请输入男主名字" || shuru_1.indexOf(" ") >= 0)
+{
+	if(shuru_1.indexOf(" ") >= 0 && shuru_1 != "♂ 请输入男主名字")
+	{
+		alert("你给男主输入的啥名字？咋还有空格呢？");
+		return;
+	}
+	alert("你倒是输入个男主名字啊兄弟！");
+	return;
+}
+if(shuru_2 == null || shuru_2 == "♀ 请输入女主名字" || shuru_2.indexOf(" ") >= 0)
+{
+	if(shuru_2.indexOf(" ") >= 0 && shuru_2 != "♀ 请输入女主名字")
+	{
+		alert("你给女主输入的啥名字？咋还有空格呢？");
+		return;
+	}
+	alert("输入了男主名字就不输入女主名字了？兄弟！");
+	return;
+}
+
+localStorage.setItem("name1",shuru_1);
+localStorage.setItem("name2",shuru_2);
+
+window.location.href = "xiaoshuo.html";
+
+}
+
+</script>
+
+</body>
+</html>
+
