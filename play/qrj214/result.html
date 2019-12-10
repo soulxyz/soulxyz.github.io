@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link href="http://wb.newbfun.com/qrj214/style.min.css" rel="stylesheet" />
+<title>测试结果</title>
+</head>
+<body bgcolor="#FFFFFF">
+<style type="text/css">
+
+input,textarea {
+	border:2px solid #ddd;
+	border-radius:0;
+	color:#999;
+	display:block;
+	font:400 1em/1 "Open Sans",sans-serif;
+	margin:0 0 .5em;
+	padding:1em 1.25em;
+	width:100%;
+	-webkit-transition:border-color 300ms,color 300ms;
+	transition:border-color 300ms,color 300ms;
+	-webkit-appearance:none
+}
+input:focus,textarea:focus {
+	border-color:#333;
+	color:#333;
+	outline:0
+}
+textarea {
+	margin:0;
+	min-height:7.5em;
+	line-height:1.5;
+	overflow:auto;
+	resize:vertical
+}
+.arrow {
+	border-top:9px solid #ddd;
+	border-right:9px solid #ddd;
+	border-bottom:9px inset transparent;
+	border-left:9px inset transparent;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	-webkit-transition:border-color 300ms;
+	transition:border-color 300ms
+}
+input:focus+.arrow,textarea:focus+.arrow {
+	border-top-color:#333;
+	border-right-color:#333
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	padding: 10 60px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px/25px Arial, sans-serif;
+}
+
+.green {
+	color: #3e5706;
+	background: #a5cd4e;
+}
+
+.blue {
+	color: #19667d;
+	background: #70c9e3;
+}
+
+.gray {
+	color: #515151;
+	background: #d3d3d3;
+}
+
+
+.biankuang{
+width:96%;
+border-style:solid;
+border-width:3px;
+border-color:#F0F0F0;
+}
+
+.dibu{
+position:fixed;
+bottom:0;
+}
+
+</style>
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000 -->
+<br>
+<div class="biankuang">
+<center>
+<br><b><font id="biaoti" size="4" >情感大师何先生在线真爱测试</font></b><br><br>
+</center>
+</div>
+<br>
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000 -->
+
+<b><font id="zhishu" size="7" color="#FF3030">真爱指数：0%</font></b><br><br>
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000 -->
+
+<b><font id="neirong" size="5" color="#4F4F4F">北京市第三区感情委提醒您：感情千万条，分手第一条；要是不分手，让你两行泪！！！</font></b><br><br>
+
+<center id="xi">
+</center>
+
+<br><br><br>
+<div class="biankuang">
+<center>
+<br><font size="4" color="#FF7F50">我以我全体粉丝的项上人头做担保：<br>此测试结果真实的一批！！！</font></b><br><br>
+</center>
+</div>
+
+
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000 -->
+
+<div class="dibu">
+<b><font size="2.5" color="#A8A8A8">性感大师：新浪微博最帅博主 @机智的何先生</font></b>
+</div>
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000 -->
+
+<script type="text/javascript">
+
+	var hisName = localStorage.getItem("hisName");
+	var myName = localStorage.getItem("myName");
+	var Nflag = localStorage.getItem("Nflag");
+
+    var biaoti = document.getElementById("biaoti");
+
+	var zhishu = document.getElementById("zhishu");
+	var neirong = document.getElementById("neirong");
+
+	var xi = document.getElementById("xi");
+
+	biaoti.innerHTML = myName+"和"+hisName+"的真爱测试结果";
+
+	var nrStr;
+	var nrNum;
+
+	if(Nflag == 1)
+	{
+		var sjnum_0 = parseInt((Math.random()*9)+91+"");
+		nrNum="真爱指数："+sjnum_0+"%";
+		
+
+        var resNr = new Array(
+	    "哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了"+sjnum_0+"%！！！"+"结婚后的他们会非常有爱，"+hisName+"做鸡蛋饼给"+myName+"吃，"+myName+"一口气吃了100多张饼，把肚子都撑大了，"+hisName+"摸着"+myName+"的肚子满眼关心的看着"+myName+"，说：“这是我的宝宝吗？”，"+myName+"娇羞了，抠了一下嗓子眼，“呕”，吐了一地：“呐，你的宝宝”。虽然"+myName+"恶心到了"+hisName+"，但"+hisName+"也没有生气，只是嘤咛了一声，对着"+myName+"的肚子狠狠的来了一拳，这一幕幕的感人场景，简直像极了爱情~祝他们幸福！", 
+		"哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了"+sjnum_0+"%！！！"+"这也太般配了吧！！！简直就是天生一对天造地设天作之合才子佳人金童玉女郎才女貌珠联璧合！！！真是羡慕死我了！！！",
+"哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了"+sjnum_0+"%！！！"+"他们的爱情令人羡慕！"+hisName+"拥有强健的体魄，甚至能够把300多斤的"+myName+"举过头顶，家里的农活都是"+hisName+"来做，而"+myName+"啥都不干，吃饱了睡睡饱了吃，像一头沉睡的猪，不过这样也为他们省了不少钱，因为"+hisName+"不用花钱去健身房了，只要拿"+myName+"举重就行了。这样的爱情，真是美极了，真心祝福~",
+
+"哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了"+sjnum_0+"%！！！"+"还记得那时的"+hisName+"年少有为不自卑，懂得什么是珍贵，而"+myName+"天天泡在KTV，只知喝酒去买醉。但爱情总是在不经意间出现的，"+hisName+"做了微商，卖酒，而"+myName+"，嫌KTV的酒太贵了，于是便在"+hisName+"那买假酒，他们的爱情，虽然始于金钱，但并不受金钱控制。以后的他们会更加幸福，"+hisName+"的微商越做越大，因为，"+myName+"做了酒托。好了，天机不能泄露太多，就祝他们，百年好喝吧~",
+
+"哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了"+sjnum_0+"%！！！"+"他们是一对非常牛逼的恋人，"+myName+"被人欺负了，"+hisName+"会找上门去，并大声警告对方：cnm三天之内撒了你，听见没小b窄汁，骨灰都给你扬喽！！！~试问这样的爱情谁不羡慕呢？让我们一起祝福这对牛逼哄哄的情侣吧！",
+
+"哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了"+sjnum_0+"%！！！"+"记得那天"+myName+"失恋了，拿着电话对那头大喊：不哄我是吧？那就不哄吧！分手分手，吗个比nia咪揪fuck干你叼哦~~~这暴燥的一幕恰巧被"+hisName+"看到了，于是"+hisName+"跑来安慰"+myName+"：别哭了，什么他妈爱情不爱情的，爱他吗了比呀~~~听"+hisName+"这么一说，"+myName+"的心情立刻就好了很多。。。人世间有许多这样的缘分，偶遇，造就了爱情，祝他们幸福天长地久！"
+
+		);
+		var ssnum = parseInt((Math.random()*5)+"");
+
+		nrStr=resNr[ssnum];
+
+
+		xi.innerHTML = "<img src='xiIcon.jpg' width='20%'/>"
+	}
+	else if(Nflag == 2)
+	{
+		nrNum="真爱指数：10000%";
+		nrStr="哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了10000%！！！"+"这他妈简直就是天仙配啊！！！真的是天生一对天造地设天作之合才子佳人金童玉女郎才女貌珠联璧合！！！羡慕死我了！！！来，举起你的双手，让我们一起祝福这对情侣！！！撒花~";
+		xi.innerHTML = "<img src='xiIcon.jpg' width='20%'/>"
+	}
+	else if(Nflag == 3)
+	{
+		nrNum="真爱指数：100000%";
+		nrStr="哇！！！"+myName+"和"+hisName+"的真爱指数竟然达到了100000%！！！"+"这他妈简直就是天仙配啊！！！真的是天生一对天造地设天作之合才子佳人金童玉女郎才女貌珠联璧合！！！羡慕死我了！！！来，举起你的双手，让我们一起祝福这对情侣！！！撒花~";
+		xi.innerHTML = "<img src='xiIcon.jpg' width='20%'/>"
+	}
+	else
+	{
+
+    var resNr = new Array(
+	    "赶紧分手！！！<br>你俩这感情明显不行！！！<br>听见没？分手！！！<br>不听话三天之内撒了你，小b窄汁！", 
+		"赶紧分手！！！<br>你俩这感情明显不行！！！<br>听见没？分手！！！<br>不听话三天之内撒了你，小b窄汁！", 
+		"赶紧分手！！！<br>你俩这感情明显不行！！！<br>听见没？分手！！！<br>不听话三天之内撒了你，小b窄汁！", 
+		"赶紧分手！！！<br>你俩这感情明显不行！！！<br>听见没？分手！！！<br>不听话三天之内撒了你，小b窄汁！", 
+		"亲亲我们这边建议您分手呢~", 
+		"亲亲我们这边建议您分手呢~", 
+		"亲亲我们这边建议您分手呢~", 
+		"亲亲我们这边建议您分手呢~", 
+		"北京市第三区情感委提醒您：<br>情感千万条，分手第一条；<br>要是不分手，让你两行泪！！！", 
+		"北京市第三区情感委提醒您：<br>情感千万条，分手第一条；<br>要是不分手，让你两行泪！！！", 
+		"北京市第三区情感委提醒您：<br>情感千万条，分手第一条；<br>要是不分手，让你两行泪！！！", 
+		"北京市第三区情感委提醒您：<br>情感千万条，分手第一条；<br>要是不分手，让你两行泪！！！", 
+		"你好，我是你儿子，<br>我是从十年后穿越回来的，<br>尽管天机不可泄露，<br>但为了你的将来，<br>我还是要对你说一句：<br>小心你对象！！！<br>话已至此，好自为之。", 
+		"你俩不合适。    ——鲁迅",
+		"站在你的第一视角：<br>Ta是He，你是Me。<br>He的首字母H代表火。<br>Me的首字母M代表木。<br>Ta属火，你属木。<br>火克金，金克木。<br>火克木，Ta克你。<br>命里相克，建议分手。", 
+		"我想对你们二人中的男人说一句：<br>曾经......<br>你总是心太软，心太软。<br>独自一个人，流泪到天亮。<br>后来遇到她，<br>你的心就死了......<br>于是......<br>你总是太软，太软。<br>独自一个人，流泪到天亮。<br>懂我意思吧？<br>懂了就赶紧分手！", 
+		"亲密无间但情缘太薄的你们并不适合做情侣。<br>更适合歃血为盟拜把子，互道一声老铁你好，让这友谊发光发热！", 
+	    "你妈让我转告你，<br>她不同意你俩在一起！！！<br>请立刻分手。", 
+		"你们的真爱指数仅仅只有百分之九，<br>不可能天长地久，<br>不如就此分手饮杯烈酒，<br>免得以后自己出糗。", 
+		"Ta拥有过人的智慧，将来会为家里带来无尽的财富。<br>你虽然没有过人的智慧，但你将来会管着家里的账。<br>Ta的智，你的账，<br>强行在一起，<br>必然是智障！<br>建议分手！", 
+		"你俩前世曾是好兄弟，无奈最后反目成仇，Ta今生与你在一起，只为报那前世的一箭之仇。<br>建议分手！", 
+		"你们的遇见是注定。<br>你像细沙一样心思细腻。<br>Ta像雕儿一样勇敢翱翔。<br>但你们在一起，<br>注定成为沙雕。<br>建议分手！", 
+		"你们2个人的真爱指数是13，还不分手等什么呢？<br>难道想当213？", 
+		"十四十四，其实你俩并不合适。", 
+		"十五十五，日后吃苦。", 
+		"十六十六，不分没救。", 
+		"十七十七，不如分手搞基。", 
+	    "十八十八，心碎咔嚓咔嚓。", 
+		"十九十九，真爱没有。", 
+		"二十二十，分手不迟！"
+	    );
+
+	var sjnum = parseInt((Math.random()*39)+"");
+
+	if(sjnum >= 30)
+	{
+		if(sjnum >=34)
+		{
+			nrStr="没啥好说的了，分手吧。";
+			nrNum="真爱指数：-1";
+		}
+		else
+		{
+			nrStr="此真爱指数涉及机密。<br>需先分手方可查看。";
+			nrNum="真爱指数：***";
+		}
+	}
+	else
+	{
+	    nrStr=resNr[sjnum];
+		if(sjnum<4)
+		{
+			sjnum=0;
+		}
+		else if(sjnum<8)
+		{
+			sjnum=1;
+		}
+		else if(sjnum<12)
+		{
+			sjnum=2;
+		}
+		else
+		{
+			sjnum = sjnum-9;
+		}
+
+		nrNum="真爱指数："+sjnum+"%";
+	}
+}
+	zhishu.innerHTML = nrNum;
+    neirong.innerHTML = nrStr;
+
+</script>
+</body>
+</html>
