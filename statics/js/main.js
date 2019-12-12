@@ -102,7 +102,7 @@ Date.prototype.Format = function(fmt){ //author: meizz
 }
 
 $(document).ready(function(){
-    getAchives();
+//    getAchives();
     gethitokoto();
     setTimeout(function(){$(".loading").hide();},1500);
 });
