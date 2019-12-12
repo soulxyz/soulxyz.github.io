@@ -14,6 +14,7 @@ function switchTo(target){
     $(target).addClass('active');
 }
 
+/*
 function getAchives(){
     t = ``;
     $.ajax({
@@ -31,8 +32,8 @@ function getAchives(){
         }
     })
 }
+*/
 
-/*
 function gethitokoto(){
     $.ajax({
         type:"POST",
@@ -46,7 +47,7 @@ function gethitokoto(){
         }
     });
 }
-*/
+
 
 function write(text){
     if (text.length < 25) {
