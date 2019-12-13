@@ -1,6 +1,6 @@
 ## 版权说明
 
-此为 [Moedog](https://prprpr.love/) 的二次开发版本，已获作者授权。
+此为 [Soulxyz](https://BLOG.YYQIANG.TOP/) 对[Moedog](https://prprpr.love/) 二次开发版本的三次开发版本，已获原作者授权。
 
 版权归原作者 [Fly](https://fly.moe/) 所有，拒绝一切未经授权的使用。
 
