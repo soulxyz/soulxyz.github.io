@@ -36,9 +36,9 @@ function getAchives(){
 
 function gethitokoto(){
     $.ajax({
-        type:"text",
+        type:"POST",
         url:"https://v1.hitokoto.cn/?encode=text",
-        dataType:"json",
+        dataType:"text",
         success:function(result){
             write(result.hitokoto);
         },
