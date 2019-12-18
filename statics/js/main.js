@@ -37,7 +37,7 @@ function getAchives(){
 function gethitokoto(){
     $.ajax({
         type:"POST",
-        url:"https://api.fczbl.vip/hitokoto/?encode=json",
+        url:"https://v1.hitokoto.cn/?encode=text",
         dataType:"json",
         success:function(result){
             write(result.hitokoto);
