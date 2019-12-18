@@ -50,7 +50,7 @@ function gethitokoto(){
 
 
 function write(text){
-    if (text.length < 25) {
+    if (text.length < 250) {
         $('#hitokoto').html(text);
     } else {
         gethitokoto();
