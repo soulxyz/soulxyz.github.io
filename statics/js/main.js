@@ -33,7 +33,7 @@ function getAchives(){
     })
 }
 */
-
+/*
 function gethitokoto(){
     $.ajax({
         type:"GET",
@@ -56,7 +56,7 @@ function write(text){
         gethitokoto();
     }
 }
-
+*/
 $(function(){
     $.ajax({
         url:"https://api.fczbl.vip/163_sp/?type=playlist&id=2003373695",
@@ -103,6 +103,6 @@ Date.prototype.Format = function(fmt){ //author: meizz
 
 $(document).ready(function(){
 //    getAchives();
-    gethitokoto();
+//    gethitokoto();
     setTimeout(function(){$(".loading").hide();},1500);
 });
