@@ -8,7 +8,7 @@
         */
         window.GLOBAL_CONFIG = {
             SCF_GATEWAY: "https://onedrive_system.soulxyz.workers.dev",
-            SITE_NAME: "FODI",
+            SITE_NAME: "文件备份",
             IS_CF: true
         };
         if (window.GLOBAL_CONFIG.SCF_GATEWAY.indexOf('workers') === -1) {
@@ -966,7 +966,7 @@
                         event => {
                             previewHandler.copyTextContent(null, window.api.url + '?file=' + path);
                             const btn = document.querySelector('.btn.quote');
-                            btn.innerHTML = '已复制';
+                            btn.innerHTML = '维护中';
                             setTimeout(() => btn.innerHTML = '引用', 250);
                         }
                     );
